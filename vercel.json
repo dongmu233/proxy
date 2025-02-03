@@ -1,3 +1,15 @@
 {
-  "rewrites": [{ "source": "/proxy", "destination": "/api/proxy" }]
+  "framework": "vite",  // 可选：如使用 Vite/React 等
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/proxy",
+      "dest": "/api/proxy"
+    }
+  ]
 }
