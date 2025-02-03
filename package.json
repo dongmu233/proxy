@@ -1,7 +1,8 @@
 {
-  "name": "vercel-proxy",
+  "name": "proxy",
   "version": "1.0.0",
+  "type": "module",  // 关键！声明使用 ESM
   "dependencies": {
-    "@vercel/node": "^2.0.0"
+    "@vercel/node": "^4.0.0"
   }
 }
